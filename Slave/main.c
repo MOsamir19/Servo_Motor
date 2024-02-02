@@ -1,38 +1,24 @@
-/*
- * main.c
- *
- *  Created on: Sep 25, 2022
- *      Author: General
- */
-
-
+/*****************************************************************************
+ *==================******************************************================*
+ *==================**   Author: Mohamed Samir Hashish      **================*
+ *==================**               NTI                    **================*
+ *==================******************************************================*
+ /*****************************************************************************/
 
 
 #include "STD_TYPES.h"
 #include "BIT_MATH.h"
 #include "util/delay.h"
-
 #include "DIO_Interface.h"
-#include "EXTINT_Interface.h"
 #include "UART_Interface.h"
 #include "SPI_Interface.h"
-#include "GIE_Interface.h"
-#include "ADC_Interface.h"
-#include "TMR0_Interface.h"
-#include "KPD_Interface.h"
 #include "LCD_Interface.h"
-#include "TIMER1_int.h"
-#include "TWI_int.h"
-#include "EXT_EEPROM_int.h"
 
 #include"string.h"
 
 #ifndef F_CPU
 #define F_CPU 8000000UL
 #endif
-//#include "avr/io.h"
-//#undef  F_CPU
-//#define F_CPU (16000000UL)
 
 
 u8 SelectServoAngle(u8 copy_data) ;
